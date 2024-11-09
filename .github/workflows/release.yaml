@@ -13,12 +13,8 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-20.04
             label: 'ubuntu'
-          - os: macos-latest
-            label: 'macos-arm'
-          - os: macos-13
-            label: 'macos-x86'
 
     runs-on: ${{ matrix.os }}
     env:
